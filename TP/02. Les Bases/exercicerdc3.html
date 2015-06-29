@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Cacul prix TTC</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script language="javascript" type="text/javascript">
+            function TTC (ht, tx)
+            {
+                var mnt;
+                if (tx === "min")
+                {
+                    mnt = ht * (1 + 5.5/100);
+                }
+                else 
+                {
+                    mnt = ht * (1 + 19.6/100);
+                }
+                return (mnt);
+            }
+        
+            ht = 100;
+            txmin = "min";
+            txmax = "max";
+            ttcmin = TTC(ht, txmin);
+            ttcmax = TTC(ht, txmax);
+        </script>
+    </head>
+    <body>
+        <script language="javascript" type="text/javascript">
+            document.write(ttcmin + "<br/>" + ttcmax);
+        </script>
+    </body>
+</html>
