@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Recherche</title>
+        <style type="text/css" media="screen">
+            @import url("lib/style.css");
+        </style>
+        <script language="javascript" type="text/javascript" src="lib/affiche.js"></script>
+        <script language="javascript" type="text/javascript" src="lib/menu.js"></script>
+        <script language="javascript" type="text/javascript" src="materiel/toolkit.js"></script>
+        <script language="javascript" type="text/javascript" src="lib/bd.js"></script>
+    </head>
+    <body>
+        <!--	<div id="bandeau">&nbsp;</div> 
+                Dans le fichier index.htm, remplacez la balise <div id="bandeau"> par un appel à la fonction affichePageBandeauHaut() 
+                et testez votre affichage, rien ne doit avoir changé
+        -->
+        <script language="javascript" type="text/javascript">
+            affichePageBandeauHaut();
+            affichePageMenu("recherche.htm");
+            affichePageTitre("recherche.htm");
+        </script>
+        
+        <!-- Dans le fichier index.htm, remplacez la balise <div id="menu"> par un appel à la fonction affichePageMenu("index.htm") 
+        et testez votre affichage, rien ne doit avoir changé
+        <div id="menu">
+            <ul>
+                <li class="select"><a href="index.htm" title="Accueil">Accueil</a></li>
+                <li><a href="recherche.htm" title="Recherche">Recherche</a></li>
+                <li><a href="commande.htm" title="Commande">Commande</a></li>
+            </ul>
+        </div>
+        -->
+        
+        <!--
+        Dans le fichier index.htm, remplacez la balise <div id="titre"> par un appel à la fonction affichePageTitre("index.htm") 
+        et testez votre affichage, rien ne doit avoir changé
+        <div id="titre"><h1>Bienvenue sur BDPhilia</h1></div>
+        -->
+        
+        <!--
+        - Dans le fichier recherche.htm, essayez de créer une instance de ficheBd puis
+	- le destocker de 10 et afficher 
+	- restocker de 2 et afficher
+	- créer un second objet, avec la même quantité et le même prix que votre premier objet
+        -->
+        
+        <div id="blockDroit">
+            <script language="javascript" type="text/javascript">
+                bd1 = new ficheBd(1,'Akira 1', 'Katsuhiro Otomo', '1990', 'Science Fiction', 20.15, 100);
+		document.write(bd1);
+                bd1.destocker(10);
+                document.write(bd1);
+                bd1.stocker(2);
+                document.write(bd1);
+                bd2 = new ficheBd(2,'DingoDossier','Gotlib', '1980', 'Humour', bd1.prix, bd1.stock);
+                document.write(bd2);
+            </script>
+        </div>
+        <div id="pied"><span>&copy; 2009 STARTX - Réalisé par Christophe LARUE</span></div>
+    </body>
+</html>
+
