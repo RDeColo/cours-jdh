@@ -41,7 +41,7 @@
 
             <form name="formu" id="formu" >
                 <textarea name="texte" cols=50 rows=10 onkeyup="init(this.value)" >Entrer du texte</textarea>
-                <br />
+                <br/>
                 <input type="button" value="Voir" onclick="init(document.formu.texte.value)" />
             </form>
             <div id="voirtxt" style="position:absolute; left:460px; top:19px; width:384px; height:179px; z-index:1; background-color: #FFFFFF; border: 1px none #000000;"></div>
@@ -53,14 +53,13 @@
 
 
 
-            <hr>
+            <hr/>
             <label>Votre recherche :</label>
             <input type="text" value="asterix" name="queryBd" id="ajaxsearchQuery"/>
             <input type="button" value="Lancer la recherche" id="ajaxsearchBtn"/>
             <br/>
+
             <div id="ajaxsearchResult"> </div>
-
-
 
             <script language="javascript" type="text/javascript">
                 ajaxsearch.init();

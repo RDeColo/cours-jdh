@@ -16,8 +16,8 @@ Pour cela, vous allez devoir réaliser les étapes suivantes :
           que nous avons créer pour cet exercice dans la page HTML (ajaxsearchQuery,ajaxsearchBtn et 
           ajaxsearchResult) Vous devez utiliser document.getElementById pour ca
 	- La methode init devra finir en associant la methode ajaxsearch.search à l'évènement click du bouton 
-          (utilisez votre variable ajaxsearch.qElem). 
-	- Dans l'objet ajaxsearch, créer la methode search qui devra créer un object xmlhttpequest pour :
+          (utilisez votre variable ajaxsearch.bElem). 
+	- Dans l'objet ajaxsearch, créer la methode search qui devra créer un object xmlhttprequest pour :
             - Ouvrir la connection vers "./bd.json", avec la methode GET et asynchrone
             - Envoyer le contenu de la recherche saisie par l'internaute via le champ input ajaxsearchQuery
             - associez la methode statique ajaxsearch.response au readystatechange de notre object xmlhttprequest
@@ -25,7 +25,7 @@ Pour cela, vous allez devoir réaliser les étapes suivantes :
             - Controller que la réponse a le bon etat state (4)
             - Controller que la réponse a le bon status (200)
             - Parser la réponse avec JSON.parse()
-            - Faire une blouche sur le tableau de réponse, et générer une liste HTML (<ul><li>) des résultats. L'afficher dans la 
+            - Faire une boucle sur le tableau de réponse, et générer une liste HTML (<ul><li>) des résultats. L'afficher dans la 
               div ajaxsearchResult
             
 

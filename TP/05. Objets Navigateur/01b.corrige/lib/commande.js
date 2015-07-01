@@ -12,10 +12,6 @@
      else result = "Adresse IP fausse";
      document.forms[0].result.value = result;
 }
-
-	
-	
-	
 	
 	
 	function met_en(quoi)
@@ -33,5 +29,5 @@
 	
 	function init(txt)
 	{
-	     document.getElementById("voirtxt").innerHTML = txt.replace( /\n/g,"<br/>")
+	     document.getElementById("voirtxt").innerHTML = txt.replace( /\n/g,"<br/>");
 	}
